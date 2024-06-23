@@ -1,0 +1,15 @@
+{% extends 'store/base.html' %}
+
+{% block title %}Delete Product{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Estas segur@ que quieres eliminar {{ object.title }}?</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Si, borrar</button>
+    </form>
+    <a href="{% url 'product_list' %}" class="btn btn-secondary">Cancelar</a>
+</div>
+{% endblock %}
+

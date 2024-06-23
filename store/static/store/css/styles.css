@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    background-color: #eeb0bb ;
+    color: #343a40;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+    
+
+/* Navbar Styles */
+.navbar {
+    background-color: #6f42c1; /* Morado */
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    color: #f5f5f5;
+    text-shadow: 0 0 5px #fe019a, 0 0 25px #fe019a, 0 0 50px #fe019a, 0 0 100px #fe019a;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+
+}
+
+.navbar-brand .brand-logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d1d1e0; /* Gris Claro */
+}
+
+.navbar-nav .nav-link i {
+    font-size: 1.5rem; /* Tamaño del icono del carrito */
+}
+
+/* Styles for Cart Notification */
+.position-relative .badge {
+    font-size: 0.75rem; /* Ajusta el tamaño del texto en la insignia */
+    right: -10px; /* Ajusta la posición horizontal de la insignia */
+    top: -10px; /* Ajusta la posición vertical de la insignia */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #d63384; /* Fucsia */
+    border-color: #d63384;
+}
+
+.btn-primary:hover {
+    background-color: #c2185b; /* Magenta Oscuro */
+    border-color: #c2185b;
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Rojo */
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #b21f2d; /* Rojo Oscuro */
+    border-color: #b21f2d;
+}
+
+.btn-success {
+    background-color: #28a745; /* Verde */
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Verde Oscuro */
+    border-color: #218838;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40; /* Negro */
+    color: #ffffff;
+    padding: 1px 0; /* Ajusta el padding para disminuir el alto */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 85px; /* Fijar una altura específica */
+    line-height: 20px; /* Ajustar la altura de línea */
+}
+
+footer .social-icons a {
+    color: #ffffff;
+    margin: 0 5px; /* Reducir el margen entre los iconos */
+    font-size: 16px; /* Ajustar el tamaño de los iconos */
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #d1d1e0; /* Gris Claro */
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px; /* Ajustar el tamaño de la fuente */
+}
+
+/* Additional Styles for Containers and Text */
+.container {
+    margin-top: 20px;
+    padding-bottom: 70px; /* Para asegurarse de que el contenido no quede oculto detrás del footer */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #6f42c1; /* Morado */
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Form Styles */
+.form-group label {
+    color: #6f42c1; /* Morado */
+    font-weight: bold;
+}
+
+.form-control {
+    border: 1px solid #6f42c1; /* Morado */
+}
+
+.form-control:focus {
+    border-color: #d63384; /* Fucsia */
+    box-shadow: 0 0 5px rgba(214, 51, 132, 0.5);
+}
+
+/* Card Styles for Product Listing */
+.card {
+    border: 1px solid #6f42c1; /* Morado */
+    margin-bottom: 30px; /* Espaciado entre tarjetas */
+}
+
+.card-header, .card-footer {
+    background-color: #6f42c1; /* Morado */
+    color: #ffffff;
+}
+
+.card-body {
+    background-color: #f8f9fa; /* Gris Claro */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+}
+
+/* Carousel Styles */
+.carousel-inner img {
+    width: 100%;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+}
+
+/* Home Page Styles */
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.product-description {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.product-description p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.product-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.product-buttons a {
+    margin: 0 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-inner img {
+        height: 250px;
+    }
+    .product-description p {
+        font-size: 1rem;
+    }
+    .product-buttons a {
+        margin: 10px 0;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-inner img {
+        height: 150px;
+    }
+    .navbar-brand .brand-logo {
+        height: 30px;
+    }
+    .product-description p {
+        font-size: 0.9rem;
+    }
+}

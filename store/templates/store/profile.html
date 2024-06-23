@@ -1,0 +1,16 @@
+{% extends 'store/base.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Perfil del usuario</h1>
+        <p>{{ user.username }}</p>
+        <p>{{ user.email }}</p>
+        {% if user.userprofile.image %}
+            <img src="{{ user.userprofile.image.url }}" alt="{{ user.username }}" class="img-fluid">
+        {% endif %}
+        <p>{{ user.userprofile.bio }}</p>
+        <p><a href="{{ user.userprofile.website }}" target="_blank">{{ user.userprofile.website }}</a></p>
+    </div>
+    {% endblock %}
